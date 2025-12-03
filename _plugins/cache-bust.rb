@@ -5,6 +5,7 @@ module Jekyll
     class CacheDigester
       require 'digest/md5'
       require 'pathname'
+      require 'tmpdir'
 
       attr_accessor :file_name, :directory
 
@@ -31,7 +32,17 @@ module Jekyll
 
       def file_content
         local_file_name = file_name.slice((file_name.index('assets/')..-1))
-        File.read(local_file_name)
+        return File.read(local_file_name) if File.exist?(local_file_name)
+
+        # When using a remote theme, assets live under Jekyll's cache/tmp dirs.
+        cached = Dir.glob(File.join('.jekyll-cache', '**', local_file_name)).first
+        return File.read(cached) if cached && File.exist?(cached)
+
+        tmp_cached = Dir.glob(File.join(Dir.tmpdir, 'jekyll-remote-theme-*', '**', local_file_name)).first
+        return File.read(tmp_cached) if tmp_cached && File.exist?(tmp_cached)
+
+        # If nothing is found, return empty content so digest still works without raising.
+        ''
       end
 
       def file_contents
