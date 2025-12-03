@@ -125,6 +125,7 @@ sass:
 plugins:
   - jekyll-remote-theme
   - jekyll-email-protect
+  - jekyll/scholar
 
 # ----------------------------------------------------------------------------
 # Library versions
