@@ -1,39 +1,16 @@
-# Haoran Zhang (张浩然)
+# Personal site (al-folio)
 
-**B.S. Computer Science, University of Michigan**  
-**B.S. Mechanical Engineering, UM–SJTU Joint Institute**
+This repository hosts Haoran Zhang's personal website using the [al-folio](https://github.com/alshedivat/al-folio) Jekyll theme. The public link stays at `https://zhhr0321.github.io` (empty `baseurl`).
 
-I am a senior undergraduate broadly interested in **computer systems, reliability, and large-scale ML infrastructure**.  
-Right now I am especially excited about understanding how complex distributed services fail in practice and how to design
-runtime systems that keep them reliable and performant.
+## Local preview
+- Install Ruby/Bundler (2.7+). Then run: `bundle install` and `bundle exec jekyll serve`.
+- The site uses a GitHub Actions workflow to build and deploy to GitHub Pages; you do not need to commit the `_site` output.
 
----
+## Quick content edits
+- `_pages/about.md` — bio, interests, and hero content.
+- `_projects/*.md` — project cards and their detail pages.
+- `_data/socials.yml` — email, GitHub, and other social links. Add `cv_pdf: /CV.pdf` once you drop your CV into the repo.
+- Set a profile photo by adding an image under `assets/img/` and pointing `profile.image` in `_pages/about.md` to the filename.
 
-## Contact
-
-- Email: zhhaoran@umich.edu  
-- GitHub: [github.com/zhhr0321](https://github.com/zhhr0321)  
-
----
-
-## Research & Project Interests
-
-- Distributed systems reliability and fail-slow behavior  
-- Runtime systems for GPU-based ML workloads  
-- Tools for observing, diagnosing, and mitigating production incidents  
-
----
-
-## Selected Projects
-
-- **Agentic-DS-Ops** – Closed-loop operations framework for ZooKeeper clusters that detects fail-slow overloads and
-  applies risk-aware mitigations.  
-  _Repo:_ <https://github.com/umich-distsys/agentic-ds-ops>
-
-- **CUDA Graph Runtime (course/research project)** – Hybrid runtime for large-scale ML inference that combines CUDA
-  Graphs with persistent kernels to reduce kernel-launch overhead and tail latency.  
-
-- **COCONUT Replication (GSM8k / ProsQA)** – Course project replicating and extending the COCONUT latent-reasoning
-  framework on reasoning benchmarks to study token efficiency vs. accuracy trade-offs.
-
----
+## Deploy
+- Workflow `.github/workflows/deploy.yml` builds on pushes to `main` and publishes via GitHub Pages. Ensure Pages is configured to use the GitHub Actions source in the repository settings.
