@@ -14,3 +14,4 @@ This repository hosts Haoran Zhang's personal website using the [al-folio](https
 
 ## Deploy
 - Workflow `.github/workflows/deploy.yml` builds on pushes to `main` and publishes via GitHub Pages. Ensure Pages is configured to use the GitHub Actions source in the repository settings.
+
