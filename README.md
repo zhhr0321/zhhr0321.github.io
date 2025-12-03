@@ -11,9 +11,8 @@ runtime systems that keep them reliable and performant.
 
 ## Contact
 
-- Email: haoranzh@umich.edu  
+- Email: zhhaoran@umich.edu  
 - GitHub: [github.com/zhhr0321](https://github.com/zhhr0321)  
-- CV: [PDF](CV.pdf) <!-- put your CV file as CV.pdf in this repo -->
 
 ---
 
