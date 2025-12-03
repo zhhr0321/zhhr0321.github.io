@@ -14,7 +14,12 @@ module Jekyll
       end
 
       def digest!
-        [file_name, '?', Digest::MD5.hexdigest(file_contents)].join
+        content = file_contents
+        [file_name, '?', Digest::MD5.hexdigest(content)].join
+      rescue Errno::ENOENT
+        # When the asset is provided by a remote theme and not present locally,
+        # fall back to the original file name without cache busting so the build succeeds.
+        file_name
       end
 
       private
