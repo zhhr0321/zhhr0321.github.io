@@ -7,6 +7,7 @@ GEM
       latex-decode (~> 0.0)
       logger (~> 1.7)
       racc (~> 1.7)
+    bigdecimal (3.3.1)
     citeproc (1.1.0)
       date
       forwardable
@@ -121,6 +122,7 @@ DEPENDENCIES
   jekyll-email-protect
   jekyll-remote-theme
   jekyll-scholar
+  sass-embedded (~> 1.94)
   webrick (~> 1.8)
 
 BUNDLED WITH
