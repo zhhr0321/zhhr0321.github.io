@@ -38,26 +38,32 @@ can keep them performant. -->
 - Tooling for observing, diagnosing, and mitigating production incidents
 
 ### Selected projects
-#### Agentic Distributed System Ops
-Order Lab @ UMich · May 2025–Present · advised by [Ryan Huang](https://web.eecs.umich.edu/~ryanph/)
 
-<p align="center">
-  <img src="{{ '/assets/img/project/agentic.png.png' | relative_url }}" alt="Agentic Distributed System Ops diagram" style="max-width: 420px; width: 100%; border-radius: 12px; box-shadow: 0 6px 20px rgba(0,0,0,0.18);" loading="lazy">
-</p>
+<div class="row align-items-center mb-4">
+  <div class="col-md-5">
+    <img class="img-fluid rounded shadow-sm" src="{{ '/assets/img/project/agentic.png.png' | relative_url }}" alt="Agentic Distributed System Ops diagram" loading="lazy">
+  </div>
+  <div class="col-md-7">
+    <h4>Agentic Distributed System Ops</h4>
+    <p class="mb-2">
+      Agent-based auto-mitigation loop (reproduce → measure → decide → mitigate) on ZooKeeper; chaos-injection, HAProxy/Resilience4j mitigations, and Prometheus/JMX observability for overload and network faults.
+    </p>
+    <a class="btn btn-primary" href="{{ '/projects/agentic-ds-ops' | relative_url }}">Learn more</a>
+  </div>
+</div>
 
-Agent-based auto-mitigation loop (reproduce → measure → decide → mitigate) for ZooKeeper clusters; chaos-injection, HAProxy/Resilience4j mitigations, and Prometheus/JMX observability to handle overload and network faults.  
-[Learn more →]({{ '/projects/agentic-ds-ops' | relative_url }}){: .btn .btn-primary }
-
-#### CUDA Proxy Player (Hybrid CUDA Runtime)
-UMich CSE 582 · Aug–Dec 2025 · taught by [Ryan Huang](https://web.eecs.umich.edu/~ryanph)
-
-<p align="center">
-  <img src="{{ '/assets/img/project/cuda-proxy.png' | relative_url }}" alt="CUDA Graph Runtime diagram" style="max-width: 420px; width: 100%; border-radius: 12px; box-shadow: 0 6px 20px rgba(0,0,0,0.18);" loading="lazy">
-</p>
-
-Hybrid CUDA runtime combining CUDA Graphs with persistent kernels to cut launch overheads and smooth tail latency on bursty MoE-style inference, keeping routing flexible while reusing captured graphs.  
-[Learn more →]({{ '/projects/cuda-graph-runtime' | relative_url }}){: .btn .btn-primary }
-
+<div class="row align-items-center mb-4">
+  <div class="col-md-5">
+    <img class="img-fluid rounded shadow-sm" src="{{ '/assets/img/project/cuda-proxy.png' | relative_url }}" alt="CUDA Graph Runtime diagram" loading="lazy">
+  </div>
+  <div class="col-md-7">
+    <h4>CUDA Proxy Player (Hybrid CUDA Runtime)</h4>
+    <p class="mb-2">
+      Hybrid CUDA runtime combining CUDA Graphs with persistent kernels to cut launch overheads and smooth tail latency on bursty MoE-style inference while keeping routing flexible.
+    </p>
+    <a class="btn btn-primary" href="{{ '/projects/cuda-graph-runtime' | relative_url }}">Learn more</a>
+  </div>
+</div>
 
 #### COCONUT Replication
 Course project on latent reasoning for LLMs (GSM8k / ProsQA) extending the COCONUT framework; instrumented prompts/beam search to study token efficiency vs. accuracy and hallucination trade-offs.
