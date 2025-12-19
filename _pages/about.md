@@ -7,8 +7,8 @@ profile:
   align: right
   image: profile_picture.JPG
   image_circular: false
-  more_info: >
-  <p>CS @ Umich + ME @SJTU>
+  # more_info: >
+  # <p>CS @ Umich + ME @SJTU>
 
   # more_info: >
     # <p>UM–SJTU Joint Institute</p>
