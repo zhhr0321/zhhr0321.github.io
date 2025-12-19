@@ -24,9 +24,9 @@ latest_posts:
 
 Hi, I'm Haoran Zhang
 
-I’m a senior undergraduate in *Computer Science* at the *University of Michigan*, also pursuing a dual degree in *Mechanical Engineering* at *Shanghai Jiao Tong University*.
+I’m a senior undergraduate in **Computer Science** at the **University of Michigan**, also pursuing a dual degree in **Mechanical Engineering** at **Shanghai Jiao Tong University**.
 
-My research interests lies broadly in *Systems Reliability*, *Systems for Machine Learning* and *Machine Learning for System*. And I'm  I am doing some related projects in agentic distributed system, MoE inference acceleration etc.
+My research interests lies broadly in **Systems Reliability**, *(Systems for Machine Learning)* and **Machine Learning for System**. And I'm  I am doing some related projects in agentic distributed system, MoE inference acceleration etc.
 <!-- I am a senior undergraduate double-majoring in Computer Science and Mechanical Engineering. I enjoy building
 and stress-testing computer systems that have to stay reliable under load, especially when they run large-scale ML
 workloads. Lately I have been exploring how complex distributed services fail in practice and how runtime systems
