@@ -30,9 +30,24 @@ can keep them performant.
 - Tooling for observing, diagnosing, and mitigating production incidents
 
 ### Selected projects
-- **Agentic-DS-Ops** — Closed-loop operations framework for ZooKeeper clusters that detects fail-slow overloads and applies risk-aware mitigations. [code](https://github.com/umich-distsys/agentic-ds-ops)
-- **CUDA Graph Runtime** — Hybrid runtime for large-scale ML inference combining CUDA Graphs with persistent kernels to lower launch overheads and tail latency.
-- **COCONUT Replication** — Course project on latent reasoning for LLMs, replicating and extending the COCONUT framework on GSM8k / ProsQA benchmarks.
+#### Agentic Distributed System Ops
+Order Lab @ UMich · May 2025–Present · advised by [Ryan Huang](https://web.eecs.umich.edu/~ryanph/)
+
+- Built an agent-based auto-mitigation loop (reproduce -> measure -> decide -> mitigate) for overload, network latency/loss/partitions.
+- Targets: Apache ZooKeeper/HDFS (3-node dev clusters) with fault injection via ChaosBlade/Chaos Mesh and `tc` netem; synthetic workload generators.
+- Mitigation: HAProxy (TCP routing/failover) and Resilience4j (circuit breaker, bulkhead, rate limiter) with scripted rollback/timeout policies.
+- Observability: Prometheus + JMX Exporter + ps/JVM flags tracking SLOs (`p99_latency`, `outstanding_requests`) and system metrics (`iface_throughput`, `cpu_usage`).
+
+#### CUDA Proxy Player (Hybrid CUDA Runtime)
+UMich CSE 582 · Aug–Dec 2025 · taught by [Ryan Huang](https://web.eecs.umich.edu/~ryanph)
+
+- Designed a hybrid CUDA runtime combining CUDA Graphs for steady compute paths with persistent kernels for irregular on-device tasks.
+- Reduced kernel-launch overheads and tail latency without brittle fusion, enabling dynamic routing while reusing captured graphs.
+- Implemented bucket-based static pooling, piecewise graph capture, and stream-level synchronization to keep MoE-style workloads smooth.
+
+
+#### COCONUT Replication
+Course project on latent reasoning for LLMs (GSM8k / ProsQA) extending the COCONUT framework; instrumented prompts/beam search to study token efficiency vs. accuracy and hallucination trade-offs.
 
 ### Contact
 Email is best for anything related to systems reliability, ML infrastructure, or cross CS/ME work. GitHub holds most
