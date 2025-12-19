@@ -10,11 +10,19 @@ horizontal: false
 
 ## Featured
 
+<style>
+  .featured-projects .project-hero {
+    max-height: 240px;
+    object-fit: cover;
+    border-bottom: 1px solid var(--global-border-color, #e5e5e5);
+  }
+</style>
+
 <div class="featured-projects mb-5">
   <div class="row gy-4">
     <div class="col-12 col-lg-6">
       <div class="card shadow-sm h-100 border-0">
-        <img class="card-img-top" src="{{ '/assets/img/project/agentic.png.png' | relative_url }}" alt="Agentic Distributed System Ops diagram">
+        <img class="card-img-top project-hero" src="{{ '/assets/img/project/agentic.png.png' | relative_url }}" alt="Agentic Distributed System Ops diagram">
         <div class="card-body">
           <h3 class="card-title">Agentic Distributed System Ops</h3>
           <p class="card-text">
@@ -27,7 +35,7 @@ horizontal: false
     </div>
     <div class="col-12 col-lg-6">
       <div class="card shadow-sm h-100 border-0">
-        <img class="card-img-top" src="{{ '/assets/img/project/cuda-proxy.png' | relative_url }}" alt="CUDA Proxy Player diagram">
+        <img class="card-img-top project-hero" src="{{ '/assets/img/project/cuda-proxy.png' | relative_url }}" alt="CUDA Proxy Player diagram">
         <div class="card-body">
           <h3 class="card-title">CUDA Graph Runtime</h3>
           <p class="card-text">

@@ -8,7 +8,9 @@ github:
 image: /assets/img/project/cuda-proxy.png
 ---
 
-![CUDA Graph Runtime diagram]({{ '/assets/img/project/cuda-proxy.png' | relative_url }})
+<p align="center">
+  <img src="{{ '/assets/img/project/cuda-proxy.png' | relative_url }}" alt="CUDA Graph Runtime diagram" style="max-width: 780px; width: 100%; border-radius: 12px; box-shadow: 0 6px 20px rgba(0,0,0,0.18);" loading="lazy">
+</p>
 
 Course/research project exploring how to overlap GPU scheduling with CUDA Graph replay. Implemented a hybrid runtime
 that stitches graph-based execution with persistent kernels to smooth tail latency on bursty inference workloads, plus
