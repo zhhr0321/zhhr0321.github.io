@@ -2,15 +2,18 @@
 layout: about
 title: Haoran Zhang
 permalink: /
-subtitle: CS & ME @ University of Michigan · systems reliability & ML infrastructure
+subtitle: CS @ University of Michigan · systems reliability & ML infrastructure
 profile:
   align: right
   image: profile_picture.JPG
   image_circular: false
   more_info: >
-    <p>UM–SJTU Joint Institute</p>
-    <p>zhhaoran@umich.edu</p>
-    <p>Based in Ann Arbor & Shanghai</p>
+  <p>CS @ Umich + ME @SJTU>
+
+  # more_info: >
+    # <p>UM–SJTU Joint Institute</p>
+    # <p>zhhaoran@umich.edu</p>
+    # <p>Based in Ann Arbor & Shanghai</p>
 selected_papers: false
 social: true
 announcements:
@@ -19,10 +22,15 @@ latest_posts:
   enabled: false
 ---
 
-I am a senior undergraduate double-majoring in Computer Science and Mechanical Engineering. I enjoy building
+Hi, I'm Haoran Zhang
+
+I’m a senior undergraduate in *Computer Science* at the *University of Michigan*, also pursuing a dual degree in *Mechanical Engineering* at *Shanghai Jiao Tong University*.
+
+My research interests lies broadly in *Systems Reliability*, *Systems for Machine Learning* and *Machine Learning for System*. And I'm  I am doing some related projects in agentic distributed system, MoE inference acceleration etc.
+<!-- I am a senior undergraduate double-majoring in Computer Science and Mechanical Engineering. I enjoy building
 and stress-testing computer systems that have to stay reliable under load, especially when they run large-scale ML
 workloads. Lately I have been exploring how complex distributed services fail in practice and how runtime systems
-can keep them performant.
+can keep them performant. -->
 
 ### Research & project interests
 - Distributed systems reliability and fail-slow behavior
@@ -49,6 +57,6 @@ UMich CSE 582 · Aug–Dec 2025 · taught by [Ryan Huang](https://web.eecs.umich
 #### COCONUT Replication
 Course project on latent reasoning for LLMs (GSM8k / ProsQA) extending the COCONUT framework; instrumented prompts/beam search to study token efficiency vs. accuracy and hallucination trade-offs.
 
-### Contact
+<!-- ### Contact
 Email is best for anything related to systems reliability, ML infrastructure, or cross CS/ME work. GitHub holds most
-code that can be shared publicly.
+code that can be shared publicly. -->
