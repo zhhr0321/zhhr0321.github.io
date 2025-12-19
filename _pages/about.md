@@ -26,7 +26,7 @@ Hi, I'm Haoran Zhang
 
 I’m a senior undergraduate in **Computer Science** at the **University of Michigan**, also pursuing a dual degree in **Mechanical Engineering** at **Shanghai Jiao Tong University**.
 
-My research interests lies broadly in **Systems Reliability**, *(Systems for Machine Learning)* and **Machine Learning for System**. And I'm  I am doing some related projects in agentic distributed system, MoE inference acceleration etc.
+My research interests lies broadly in **Systems Reliability**, **Systems for Machine Learning** and **Machine Learning for System**. And I'm  I am doing some related projects in agentic distributed system, MoE inference acceleration etc.
 <!-- I am a senior undergraduate double-majoring in Computer Science and Mechanical Engineering. I enjoy building
 and stress-testing computer systems that have to stay reliable under load, especially when they run large-scale ML
 workloads. Lately I have been exploring how complex distributed services fail in practice and how runtime systems
@@ -48,7 +48,7 @@ can keep them performant. -->
     <p class="mb-2">
       Agent-based auto-mitigation loop (reproduce → measure → decide → mitigate) on ZooKeeper; chaos-injection, HAProxy/Resilience4j mitigations, and Prometheus/JMX observability for overload and network faults.
     </p>
-    <a class="btn btn-primary" href="{{ '/projects/agentic-ds-ops' | relative_url }}">Learn more</a>
+    <a class="btn btn-primary" href="{{ '/projects/#agentic-ds-ops' | relative_url }}">View on projects page</a>
   </div>
 </div>
 
@@ -61,7 +61,7 @@ can keep them performant. -->
     <p class="mb-2">
       Hybrid CUDA runtime combining CUDA Graphs with persistent kernels to cut launch overheads and smooth tail latency on bursty MoE-style inference while keeping routing flexible.
     </p>
-    <a class="btn btn-primary" href="{{ '/projects/cuda-graph-runtime' | relative_url }}">Learn more</a>
+    <a class="btn btn-primary" href="{{ '/projects/#cuda-graph-runtime' | relative_url }}">View on projects page</a>
   </div>
 </div>
 
