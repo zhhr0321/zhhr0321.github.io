@@ -5,7 +5,10 @@ description: Closed-loop operations for ZooKeeper clusters detecting fail-slow o
 importance: 1
 category: systems
 # github: https://github.com/umich-distsys/agentic-ds-ops
+image: /assets/img/project/agentic.png.png
 ---
+
+![Agentic Distributed System Ops diagram]({{ '/assets/img/project/agentic.png.png' | relative_url }})
 
 Built an agentic operations framework for ZooKeeper clusters that identifies fail-slow overloads and applies
 mitigations (rate limiting, replica migration) based on runtime risk. Focused on modeling queueing behavior under

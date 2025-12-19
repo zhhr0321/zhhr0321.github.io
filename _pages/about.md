@@ -41,6 +41,8 @@ can keep them performant. -->
 #### Agentic Distributed System Ops
 Order Lab @ UMich · May 2025–Present · advised by [Ryan Huang](https://web.eecs.umich.edu/~ryanph/)
 
+![Agentic Distributed System Ops diagram]({{ '/assets/img/project/agentic.png.png' | relative_url }})
+
 - Built an agent-based auto-mitigation loop (reproduce -> measure -> decide -> mitigate) for overload, network latency/loss/partitions.
 - Targets: Apache ZooKeeper/HDFS (3-node dev clusters) with fault injection via ChaosBlade/Chaos Mesh and `tc` netem; synthetic workload generators.
 - Mitigation: HAProxy (TCP routing/failover) and Resilience4j (circuit breaker, bulkhead, rate limiter) with scripted rollback/timeout policies.
@@ -48,6 +50,8 @@ Order Lab @ UMich · May 2025–Present · advised by [Ryan Huang](https://web.e
 
 #### CUDA Proxy Player (Hybrid CUDA Runtime)
 UMich CSE 582 · Aug–Dec 2025 · taught by [Ryan Huang](https://web.eecs.umich.edu/~ryanph)
+
+![CUDA Graph Runtime diagram]({{ '/assets/img/project/cuda-proxy.png' | relative_url }})
 
 - Designed a hybrid CUDA runtime combining CUDA Graphs for steady compute paths with persistent kernels for irregular on-device tasks.
 - Reduced kernel-launch overheads and tail latency without brittle fusion, enabling dynamic routing while reusing captured graphs.
