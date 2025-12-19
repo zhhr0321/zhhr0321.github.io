@@ -10,3 +10,5 @@ github:
 Course/research project exploring how to overlap GPU scheduling with CUDA Graph replay. Implemented a hybrid runtime
 that stitches graph-based execution with persistent kernels to smooth tail latency on bursty inference workloads, plus
 profiling to understand utilization bottlenecks on A100s.
+
+[Project report (PDF)]({{ '/assets/img/project/CUDAproxy_rpt.pdf' | relative_url }})
