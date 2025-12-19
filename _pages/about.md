@@ -42,24 +42,21 @@ can keep them performant. -->
 Order Lab @ UMich · May 2025–Present · advised by [Ryan Huang](https://web.eecs.umich.edu/~ryanph/)
 
 <p align="center">
-  <img src="{{ '/assets/img/project/agentic.png.png' | relative_url }}" alt="Agentic Distributed System Ops diagram" style="max-width: 520px; width: 100%; border-radius: 12px; box-shadow: 0 6px 20px rgba(0,0,0,0.18);" loading="lazy">
+  <img src="{{ '/assets/img/project/agentic.png.png' | relative_url }}" alt="Agentic Distributed System Ops diagram" style="max-width: 420px; width: 100%; border-radius: 12px; box-shadow: 0 6px 20px rgba(0,0,0,0.18);" loading="lazy">
 </p>
 
-- Built an agent-based auto-mitigation loop (reproduce -> measure -> decide -> mitigate) for overload, network latency/loss/partitions.
-- Targets: Apache ZooKeeper/HDFS (3-node dev clusters) with fault injection via ChaosBlade/Chaos Mesh and `tc` netem; synthetic workload generators.
-- Mitigation: HAProxy (TCP routing/failover) and Resilience4j (circuit breaker, bulkhead, rate limiter) with scripted rollback/timeout policies.
-- Observability: Prometheus + JMX Exporter + ps/JVM flags tracking SLOs (`p99_latency`, `outstanding_requests`) and system metrics (`iface_throughput`, `cpu_usage`).
+Agent-based auto-mitigation loop (reproduce → measure → decide → mitigate) for ZooKeeper clusters; chaos-injection, HAProxy/Resilience4j mitigations, and Prometheus/JMX observability to handle overload and network faults.  
+[Learn more →]({{ '/projects/agentic-ds-ops' | relative_url }}){: .btn .btn-primary }
 
 #### CUDA Proxy Player (Hybrid CUDA Runtime)
 UMich CSE 582 · Aug–Dec 2025 · taught by [Ryan Huang](https://web.eecs.umich.edu/~ryanph)
 
 <p align="center">
-  <img src="{{ '/assets/img/project/cuda-proxy.png' | relative_url }}" alt="CUDA Graph Runtime diagram" style="max-width: 520px; width: 100%; border-radius: 12px; box-shadow: 0 6px 20px rgba(0,0,0,0.18);" loading="lazy">
+  <img src="{{ '/assets/img/project/cuda-proxy.png' | relative_url }}" alt="CUDA Graph Runtime diagram" style="max-width: 420px; width: 100%; border-radius: 12px; box-shadow: 0 6px 20px rgba(0,0,0,0.18);" loading="lazy">
 </p>
 
-- Designed a hybrid CUDA runtime combining CUDA Graphs for steady compute paths with persistent kernels for irregular on-device tasks.
-- Reduced kernel-launch overheads and tail latency without brittle fusion, enabling dynamic routing while reusing captured graphs.
-- Implemented bucket-based static pooling, piecewise graph capture, and stream-level synchronization to keep MoE-style workloads smooth.
+Hybrid CUDA runtime combining CUDA Graphs with persistent kernels to cut launch overheads and smooth tail latency on bursty MoE-style inference, keeping routing flexible while reusing captured graphs.  
+[Learn more →]({{ '/projects/cuda-graph-runtime' | relative_url }}){: .btn .btn-primary }
 
 
 #### COCONUT Replication
