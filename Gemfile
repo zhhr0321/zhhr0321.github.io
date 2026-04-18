@@ -4,6 +4,7 @@ gem 'jekyll', '~> 4.3.3'
 gem 'jekyll-remote-theme'
 gem 'jekyll-email-protect'
 gem 'jekyll-scholar'
+gem 'jekyll-socials'
 gem 'sass-embedded', '~> 1.94'
 
 group :development do

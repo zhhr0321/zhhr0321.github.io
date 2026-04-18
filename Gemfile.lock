@@ -69,6 +69,8 @@ GEM
       citeproc-ruby (~> 2.0)
       csl-styles (~> 2.0)
       jekyll (~> 4.0)
+    jekyll-socials (0.0.7)
+      jekyll (>= 3.6, < 5.0)
     jekyll-watch (2.2.1)
       listen (~> 3.0)
     json (2.7.6)
@@ -122,6 +124,7 @@ DEPENDENCIES
   jekyll-email-protect
   jekyll-remote-theme
   jekyll-scholar
+  jekyll-socials
   sass-embedded (~> 1.94)
   webrick (~> 1.8)
 

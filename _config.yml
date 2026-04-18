@@ -24,7 +24,7 @@ back_to_top: true
 # Theme
 # ----------------------------------------------------------------------------
 
-remote_theme: alshedivat/al-folio
+remote_theme: alshedivat/al-folio@v0.16.3
 
 repo_theme_light: default
 repo_theme_dark: dark
@@ -126,6 +126,7 @@ plugins:
   - jekyll-remote-theme
   - jekyll-email-protect
   - jekyll/scholar
+  - jekyll-socials
 
 # ----------------------------------------------------------------------------
 # Library versions
